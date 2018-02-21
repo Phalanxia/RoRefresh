@@ -24,7 +24,7 @@
 		{
 			 "matches": ["*://www.roblox.com/*", "*://web.roblox.com/*", "*://forum.roblox.com/*"],
 			 "css":     ["./styles/general.css"],
-			 "js":      ["./scripts.js"],
+			 "js":      ["./js/scripts.js"],
 			 "run_at":  "document_end"
 		},
 		{
