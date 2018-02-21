@@ -28,7 +28,7 @@
 			 "run_at":  "document_end"
 		},
 		{
-			"matches": ["*://www.roblox.com/users/*/profile", "*://web.roblox.com/users/*/profile"],
+			"matches": ["*://www.roblox.com/users/*/profile*", "*://web.roblox.com/users/*/profile*"],
 			"css":     ["./styles/profile.css"],
 			"run_at":  "document_end"
 	 },
