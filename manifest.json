@@ -1,0 +1,36 @@
+{
+
+	"description": "Applies CSS and other changes to the Roblox website.",
+	"manifest_version": 2,
+	"name": "Rorefresh",
+	"version": "1.0",
+
+	"background": {
+		"scripts": ["Rorefresh.js"]
+	},
+
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+
+	"content_scripts": [
+		{
+			 "matches": ["*://www.roblox.com/*", "*://web.roblox.com/*", "*://forum.roblox.com/*"],
+			 "css":     ["./styles/general.css"],
+			 "js":      ["./scripts.js"],
+			 "run_at":  "document_end"
+		},
+		{
+			"matches": ["*://www.roblox.com/users/*/profile", "*://web.roblox.com/users/*/profile"],
+			"css":     ["./styles/profile.css"],
+			"run_at":  "document_end"
+	 },
+	 {
+		 "matches": ["*://www.roblox.com/games*", "*://web.roblox.com/games*"],
+		 "css":     ["./styles/games.css"],
+		 "run_at":  "document_end"
+	}
+ ]
+
+}

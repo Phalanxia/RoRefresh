@@ -1,0 +1,255 @@
+/*
+	Profile Page
+	================
+*/
+
+.profile-container {
+	height: 100% !important;
+	max-width: 1000px !important;
+	position: relative !important;
+	display: flex !important;
+}
+
+.leaderboard-abp iframe {
+	margin-bottom: 25px !important;
+}
+
+.profile-header {
+	display: table !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 280px !important;
+	height: 100% !important;
+	margin-top: 0 !important;
+	border: 0px solid transparent !important;
+	border-radius: 4px !important;
+}
+.profile-header .profile-header-content {
+	height: 100% !important;
+	padding: 16px !important;
+	box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.14) !important;
+	margin: 0 !important;
+}
+
+.profile-header .profile-header-more {
+	position: absolute;
+	top: 6px;
+	right: 12px;
+}
+
+.profile-header .profile-avatar-image {
+	position: relative !important;
+	margin: 0 auto !important;
+	float: none !important;
+	box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.14) !important;
+	border: none !important;
+}
+
+.profile-header .header-caption {
+	width: 100% !important;
+	height: 128px !important;
+	position: relative !important;
+	float: none !important;
+}
+
+.profile-header .header-title {
+	width: 100% !important;
+}
+.profile-header .header-title h2 {
+	width: 100% !important;
+	margin: 0 !important;
+	text-align: center !important;
+}
+.profile-header .header-title span {
+	display: none;
+}
+
+.profile-header .header-userstatus {
+	position: absolute;
+	top: 52px;
+	width: 100%;
+}
+
+.profile-header .header-userstatus #userStatusText {
+	text-align: center;
+}
+
+.profile-header .header-details {
+	position: block !important;
+	position: relative !important;
+	padding-top: 40px !important;
+	/*top: 80px !important;*/
+}
+.profile-header .header-details .details-info {
+	width: 100% !important;
+}
+
+.profile-header .header-details .details-actions.mobile-action {
+	display: flex !important;
+	justify-content: space-between;
+	width: 100% !important;
+	height: auto !important;
+	padding: 8px 0 0 0;
+	border-top: 1px solid hsl(0, 0%, 91%) !important;
+}
+.profile-header .header-details .details-actions.mobile-action li:first-of-type {
+	border-right: 1px solid hsl(0, 0%, 91%) !important;
+}
+
+.profile-header .header-details .details-actions.desktop-action {
+	display: none !important;
+}
+
+.profile-header .header-details .details-actions li {
+	float: none;
+	display: inline-block;
+	height: 50px !important;
+}
+.profile-header .icon-add-friend,
+.profile-header .icon-remove-friend,
+.profile-header .icon-send-message,
+.profile-header .icon-start-chat,
+.profile-header .icon-friend-pending,
+.profile-header .icon-accept-friend,
+.profile-header .icon-join-game,
+.profile-header .icon-send-message-disabled {
+	background-size: 30px auto !important;
+	width: 30px !important;
+	height: 30px !important;
+}
+.profile-header .icon-send-message { background-position: 0 -88px !important;}
+.profile-header .icon-send-message-disabled { background-position: 0 -238px !important; }
+.profile-header .icon-remove-friend { background-position: 0 -30px !important; }
+.profile-header .icon-start-chat { background-position: 0 -210px !important; }
+.profile-header .icon-friend-pending { background-position: 0 -60px !important; }
+.profile-header .icon-accept-friend { background-position: 0 -270px !important; }
+.profile-header .icon-join-game { background-position: 0 -118px !important; }
+
+/* About */
+.profile-about .profile-about-content { padding-bottom: 8px !important; }
+.profile-about .profile-about-footer {
+	padding: 8px 0 0 0 !important;
+	border-top: 1px solid #e8e8e8 !important;
+}
+
+/* Currently Wearing */
+
+.enable-three-dee {
+	border-radius: 50% !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+	padding: 0 !important;
+}
+
+.profile-avatar-right { background-color: hsl(202, 100%, 38%) !important; }
+.profile-avatar-right .profile-avatar-mask { background: none !important; }
+
+.profile-accoutrements-container .accoutrement-items-container {
+	margin: 30px 0 !important;
+}
+
+.profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item {
+	width: 76px !important;
+	height: 76px !important;
+}
+
+.profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item a { background-color: #005c90 !important; }
+.profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item .accoutrement-image {
+	min-width: 60px !important;
+	min-height: 60px !important;
+}
+
+/* Make profile content move to the right */
+/*body:not([data-internal-page-name="Friends"])*/ .rbx-tabs-horizontal {
+	float: right !important;
+	position: relative !important;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	max-width: 700px;
+	margin-left: 300px;
+}
+
+#wrap {
+	width: 100% !important;;
+	height: 100% !important;
+}
+
+.section-content {
+	border: 0px solid transparent;
+	border-radius: 4px !important;
+	box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.14) !important;
+}
+
+/* Profile friends list */
+
+.friend-list {
+	display: flex;
+	justify-content: space-between;
+}
+.friend-list .friend { width: 90px !important; }
+.friend-list .friend:nth-last-child(1),
+.friend-list .friend:nth-last-child(2),
+.friend-list .friend:nth-last-child(3) {
+	display: none;
+}
+
+/* Profile collections list */
+
+.collections-list {
+	display: flex;
+	justify-content: space-between;
+}
+.collections-list .collections-item { width: 140px !important; }
+.collections-list .collections-item:nth-last-child(1),
+.collections-list .collections-item:nth-last-child(2) {
+	display: none;
+}
+
+/*.collections-list .collections-item { width: auto !important; }*/
+.collections-list .collections-item img {
+	border: 1px solid rgb(234, 234, 234) !important;
+	background: rgb(245, 245, 245) !important;
+}
+.collections-list .collections-item span[title] { border: none !important; }
+.collections-list .collections-item .item-name { text-align: center !important; }
+.collections-list .collections-item .asset-restriction-icon { left: 0 !important; }
+
+/* Badge List */
+.profile-container .badge-list {
+	display: flex;
+	justify-content: space-between;
+}
+.profile-container .badge-list .badge-item {
+	width: 140px;
+}
+
+/* Groups */
+
+.slide-item-image { box-shadow: none !important; }
+.switcher { box-shadow: none; }
+.slide-switcher { background: none !important; }
+#groups-switcher {
+	margin-bottom: 16px !important;
+	border: 0px solid transparent;
+	border-radius: 4px !important;
+	box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.14) !important;
+}
+#groups-switcher .slide-item-container-left {
+	background-color: hsl(202, 100%, 38%) !important;
+	border: 0px solid transparent !important;
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+	box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.14) !important;
+}
+#groups-switcher .slide-item-container-right {
+	border: 0px solid transparent !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+
+/* Footer */
+
+.container-footer { position: static !important; }
