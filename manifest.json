@@ -23,23 +23,23 @@
 	"content_scripts": [
 		{
 			"matches": ["*://www.roblox.com/*", "*://web.roblox.com/*", "*://forum.roblox.com/*"],
-			"css":     ["./styles/general.css"],
+			"css":     ["./styles/mainSite/general.css"],
 			"js":      ["./js/scripts.js"],
 			"run_at":  "document_end"
 		},
 		{
-			"matches": ["*://www.roblox.com/users/*/profile*", "*://web.roblox.com/users/*/profile*"],
-			"css":     ["./styles/profile.css"],
-			"run_at":  "document_end"
-		},
-		{
-			"matches": ["*://www.roblox.com/users/*/profile*", "*://web.roblox.com/users/*/profile*"],
-			"css":     ["./styles/profile.css"],
-			"run_at":  "document_end"
-		},
-		{
 			"matches": ["*://www.roblox.com/games*", "*://web.roblox.com/games*"],
-			"css":     ["./styles/games.css"],
+			"css":     ["./styles/mainSite/games.css"],
+			"run_at":  "document_end"
+		},
+		{
+			"matches": ["*://www.roblox.com/users/*/profile*", "*://web.roblox.com/users/*/profile*"],
+			"css":     ["./styles/mainSite/users/profile.css"],
+			"run_at":  "document_end"
+		},
+		{
+			"matches": ["*://www.roblox.com/users/friends*", "*://web.roblox.com/users/friends*"],
+			"css":     ["./styles/mainSite/users/friends.css"],
 			"run_at":  "document_end"
 		}
  ]

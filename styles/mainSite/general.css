@@ -99,8 +99,10 @@ body,
 	margin: 5px 0 !important;
 	padding: 8px 10px !important;
 	background: hsl(202, 100%, 50%) !important;
+	border: none;
 	border-radius: 20px !important;
 	font-weight: bold !important;
+	color: hsl(0, 0%, 100%)
 }
 
 .container-buttons {
