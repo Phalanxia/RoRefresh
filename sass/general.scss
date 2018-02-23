@@ -13,6 +13,8 @@ body {
 	min-height: 100% !important;
 }*/
 
+@import 'colors';
+
 body,
 .content,
 .games-list-container {
@@ -36,7 +38,7 @@ body,
 /* Header/Nav */
 
 .rbx-header {
-	background: hsla(202, 100%, 50%, 0.9) !important;
+	background: fade-out($blue, .1) !important;
 	/*background-color: rgba(36, 41, 46, .9) !important;*/
 }
 
@@ -57,7 +59,7 @@ body,
 .icon-nav-search { filter: brightness(10) !important; }
 
 #navbar-universal-search {
-	background: hsla(0, 0%, 100%, 0.1) !important;
+	background: fade-out($darkBlue, .2) !important;
 	border-radius: 2px !important;
 }
 

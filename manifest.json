@@ -3,7 +3,7 @@
 	"description": "Applies CSS and other changes to the Roblox website.",
 	"manifest_version": 2,
 	"name": "Rorefresh",
-	"version": "1.0.1",
+	"version": "1.0.2",
 
 	"icons": {
 		"16":  "icons/icon16.png",
@@ -23,23 +23,23 @@
 	"content_scripts": [
 		{
 			"matches": ["*://www.roblox.com/*", "*://web.roblox.com/*", "*://forum.roblox.com/*"],
-			"css":     ["./styles/mainSite/general.css"],
+			"css":     ["./css/general.css"],
 			"js":      ["./js/scripts.js"],
 			"run_at":  "document_end"
 		},
 		{
 			"matches": ["*://www.roblox.com/games*", "*://web.roblox.com/games*"],
-			"css":     ["./styles/mainSite/games.css"],
+			"css":     ["./css/page-games.css"],
 			"run_at":  "document_end"
 		},
 		{
 			"matches": ["*://www.roblox.com/users/*/profile*", "*://web.roblox.com/users/*/profile*"],
-			"css":     ["./styles/mainSite/users/profile.css"],
+			"css":     ["./css/page-profile.css"],
 			"run_at":  "document_end"
 		},
 		{
 			"matches": ["*://www.roblox.com/users/friends*", "*://web.roblox.com/users/friends*"],
-			"css":     ["./styles/mainSite/users/friends.css"],
+			"css":     ["./css/page-friends.css"],
 			"run_at":  "document_end"
 		}
  ]
