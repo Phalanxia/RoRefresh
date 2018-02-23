@@ -19,8 +19,6 @@ body,
 	background-color: hsl(0, 0%, 93%) !important;
 }
 
-body { margin-bottom: 0 !important; }
-
 .section { margin: 16px 0 0 0 !important; }
 .section-content {
 	margin: 0 !important;
@@ -81,7 +79,7 @@ body { margin-bottom: 0 !important; }
 /*
 	Container headers
 	----------------
-	*/
+*/
 
 .rbx-tab {
 	border: 0px solid transparent;
