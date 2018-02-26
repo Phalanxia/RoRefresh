@@ -14,6 +14,7 @@ body {
 }*/
 
 @import 'colors';
+@import 'buttons';
 
 body,
 .content,
@@ -93,18 +94,6 @@ body,
 	vertical-align: middle !important;
 	line-height: 46px !important;
 	font-size: 1.5em !important;
-}
-
-/*.container-header .btn-secondary-xs,*/
-.container-header .btn-fixed-width,
-.container-header .btn-more {
-	margin: 5px 0 !important;
-	padding: 8px 10px !important;
-	background: hsl(202, 100%, 50%) !important;
-	border: none;
-	border-radius: 20px !important;
-	font-weight: bold !important;
-	color: hsl(0, 0%, 100%)
 }
 
 .container-buttons {
