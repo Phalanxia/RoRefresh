@@ -82,8 +82,11 @@
   padding: 8px 0 0 0;
   border-top: 1px solid #e8e8e8 !important; }
 
-.profile-header .header-details .details-actions.mobile-action li:first-of-type {
+.profile-header .header-details .details-actions.mobile-action li {
   border-right: 1px solid #e8e8e8 !important; }
+
+.profile-header .header-details .details-actions.mobile-action li:last-child {
+  border-right: 0 none !important; }
 
 .profile-header .header-details .details-actions.desktop-action {
   display: none !important; }
@@ -256,3 +259,7 @@
   border: 0px solid transparent !important;
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important; }
+
+/* Stats */
+.profile-statistics {
+  margin-bottom: 20px !important; }
