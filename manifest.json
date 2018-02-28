@@ -2,8 +2,8 @@
 
 	"description": "Applies CSS and other changes to the Roblox website.",
 	"manifest_version": 2,
-	"name": "Rorefresh",
-	"version": "1.0.4",
+	"name": "RoRefresh",
+	"version": "1.0.5",
 
 	"icons": {
 		"16":  "icons/icon16.png",
@@ -12,7 +12,7 @@
 	},
 
 	"background": {
-		"scripts": ["Rorefresh.js"]
+		"scripts": ["RoRefresh.js"]
 	},
 
 	"permissions": [
