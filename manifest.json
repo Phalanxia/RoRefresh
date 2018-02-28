@@ -3,7 +3,7 @@
 	"description": "Applies CSS and other changes to the Roblox website.",
 	"manifest_version": 2,
 	"name": "Rorefresh",
-	"version": "1.0.2",
+	"version": "1.0.3",
 
 	"icons": {
 		"16":  "icons/icon16.png",
@@ -40,6 +40,11 @@
 		{
 			"matches": ["*://www.roblox.com/users/friends*", "*://web.roblox.com/users/friends*"],
 			"css":     ["./css/page-friends.css"],
+			"run_at":  "document_end"
+		},
+		{
+			"matches": ["*://wiki.roblox.com/*"],
+			"css":     ["./css/wiki.css"],
 			"run_at":  "document_end"
 		}
  ]

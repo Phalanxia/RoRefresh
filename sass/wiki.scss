@@ -1,0 +1,11 @@
+html {
+	display: grid;
+}
+
+html, body {
+	height: 100%
+}
+
+.mw-body-content {
+	height: calc(100% - 380px);
+}
