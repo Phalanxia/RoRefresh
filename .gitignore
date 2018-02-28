@@ -1,4 +1,4 @@
 *.bat
-*.css
+/css
 .sass-cache
 Rorefresh.zip
