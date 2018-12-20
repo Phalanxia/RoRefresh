@@ -7,3 +7,7 @@ Browser extension that restyles the [Roblox](https://roblox.com) website, plus i
 ## Contributing
 
 Found a bug? Thing something should be added? Please [submit an issue](https://github.com/Phalanxia/RoRefresh/issues).
+
+## License
+
+[Mozilla Public License 2.0](LICENSE) © 2018 Madison Tries
